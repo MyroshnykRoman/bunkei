@@ -1,0 +1,48 @@
+<!--曖昧性解消パターンの構造-->
+<bunkei name="">
+	<pattern type="naiyou_hyogen/kinou_hyougen">
+	<front_second>
+		<candidate_name></candidate_name>
+<candidate_name></candidate_name>
+	</front_second>
+	<front_first>
+		<candidate_name></candidate_name>
+<candidate_name></candidate_name>
+	</front_first>
+	<back_first>
+		<candidate_name></candidate_name>
+<candidate_name></candidate_name>
+	</back_first>
+	<back_second>
+		<candidate_name></candidate_name>
+<candidate_name></candidate_name>
+	</back_second>
+	</pattern>
+</bunkei>
+<!--
+<bunkei>タグのname属性は取り扱う同定した文型の名前を含む。
+<bunkei>タグの中に複数<pattern>タグが含まれ、
+typeの属性はパターンを内容表現同定もしくは機能表現同定として判別する。
+<pattern>の中に前後の2つ形態素に当てはまる4つ任意のタグがある。
+そのタグの中に候補形態素のラベルを記述する。二つの曖昧性解消パターンの例が以下のとおりである。
+「とわいえ」に対して後ろの一番目の形態素が助動詞「ない」の場合、同定した文型が内容表現として判別される。
+それと違って、「にたりない」に対して前の一番目の形態素が動詞の場合、同定した文型が機能表現として判別する。-->
+
+<!--曖昧性解消パターンの例-->
+<bunkei name="towaie">
+	<pattern type="naiyou_hyogen">
+	<back_first>
+<candidate_name>nai_jyodoushi</candidate_name>
+	</back_first>
+	</pattern>
+</bunkei>
+
+
+
+<bunkei name="ni_tarinai">
+	<pattern type="kinou_hyougen">
+	<front_first>
+		<candidate_name>doushi</candidate_name>
+	</front_first>
+	</pattern>
+</bunkei>

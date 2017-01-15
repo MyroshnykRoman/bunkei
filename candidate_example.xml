@@ -1,0 +1,31 @@
+<!--文型構成素の検出XMLパターンの構造：-->
+<candidate name="… "　class="… ">
+      <pos>…</pos>
+      <pos1>…</pos1>
+      <pos2>…</pos2>
+      <pos3>…</pos3> 
+      <inflected_form>…</inflected_form>
+      <utilizing_type>…</utilizing_type>
+      <original_form>…</original_form>
+      <reading>…</reading>
+      <pronounciation>…</pronounciation>
+    </candidate>
+
+<!--<candidate>というタグの中にはそれぞれのMecab解析結果の要素と当該する孫ノードが
+入っている。このノードの中に検出に必要なMecabの情報が記述されている。
+<candidate>のnameという属性が候補形態素ラベルの情報を含んでいて、
+<candidate>のclassという属性が文型構成素のクラスを含む。検出の時、
+当該形態素にそちらのラベルを付与するという処理になっている。この処理も
+変換前後の素性をXMLで記述したパターンによって定義される。-->
+
+<!--文型構成素の例-->
+<candidate name="aete">
+      <pos>副詞</pos>
+      <pos1>一般</pos1>    
+  　<reading>アエテ</reading>
+ </candidate>
+<candidate name="ageku">
+      <pos>名詞</pos>
+      <pos1>副詞可能</pos1>
+   　<reading>アゲク</reading>
+</candidate>
