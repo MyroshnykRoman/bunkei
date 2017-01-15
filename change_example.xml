@@ -1,0 +1,48 @@
+<!--ここでは＜change＞のタグの中に修正パターンを記述する。
+＜from＞のタグは修正・変更の前の形態素のタグを含む。
+＜to＞のタグの中に修正後の形態素のタグを含んでいる。
+＜keitaiso＞タグは形態素を示していて形態素の中のそれぞれのタグは形態素解析結果の表記、
+品詞、読みを示している。上記のパターンにとって解析結果の中で一般名詞「其」を従っている助動詞「れ」を代名詞「其れ」に修正を行う。-->
+
+<change>
+<from>
+	<keitaiso>
+		<display_text>其</display_text>
+		<pos>名詞</pos>
+      		<pos1>一般</pos1>
+      		<pos2>*</pos2>
+      		<pos3>*</pos3> 
+      		<inflected_form>*</inflected_form>
+      		<utilizing_type>*</utilizing_type>
+      		<original_form>*</original_form>
+      		<reading>*</reading>
+      		<pronounciation>*</pronounciation>
+	</keitaiso>
+	<keitaiso>
+		<display_text>れ</display_text>
+		<pos>助動詞</pos>
+      		<pos1>*</pos1>
+      		<pos2>*</pos2>
+      		<pos3>*</pos3> 
+      		<inflected_form>文語・ル</inflected_form>
+      		<utilizing_type>連用形</utilizing_type>
+      		<original_form>る</original_form>
+      		<reading>レ</reading>
+      		<pronounciation>レ</pronounciation>
+	</keitaiso>
+</from>
+<to>
+	<keitaiso>
+		<display_text>其れ</display_text>
+		<pos>名詞</pos>
+      	<pos1>代名詞</pos1>
+      	<pos2>一般</pos2>
+      	<pos3>*</pos3> 
+      	<inflected_form>*</inflected_form>
+      	<utilizing_type>*</utilizing_type>
+      	<original_form>其れ</original_form>
+      	<reading>ソレ</reading>
+      	<pronounciation>ソレ</pronounciation>
+	</keitaiso>
+</to>	
+</change>
