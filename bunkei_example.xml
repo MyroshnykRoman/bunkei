@@ -1,0 +1,78 @@
+<!--「てあげる」　の記述例　（連続複合文型）-->
+
+<bunkei name="ageru2">
+  <pattern>
+    <keitaiso>
+      <cand_name>te</cand_name>
+      <cand_name>de_setsuzokujyoshi</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>*</cand_name>
+      <cand_name>ha</cand_name>
+      <cand_name>mo</cand_name>
+      <cand_name>sae</cand_name>
+      <cand_name>sura</cand_name>
+      <cand_name>nado</cand_name>
+      <cand_name>nanka</cand_name>
+      <cand_name>nannte</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>ageru_doushi_hijiritsu</cand_name>
+      <cand_name>ageru_doushi_hijiritsu_kanji</cand_name>
+      <cand_name>ageru_doushi_jiritsu_kanji</cand_name>
+      <cand_name>ageru_doushi_jiritsu</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>*</cand_name>
+      <cand_name>masu_jyodoushi</cand_name>
+      <cand_name>mashi_jyodoushi</cand_name>
+      <cand_name>masure_jyodoushi</cand_name>
+    </keitaiso>
+  </pattern>
+  <pattern>
+    <keitaiso>
+      <cand_name>tageru</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>*</cand_name>
+      <cand_name>masu_jyodoushi</cand_name>
+      <cand_name>mashi_jyodoushi</cand_name>
+    </keitaiso>
+  </pattern>
+</bunkei>
+
+<!--「と言わず．．．と言わず」　の記述例　（繰り返し文型）-->
+
+<bunkei name="toiwazu_toiwazu">
+  <pattern type="repeat">
+    <keitaiso>
+      <cand_name>to_kakujyoshi_inyou</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>iwa</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>zu</cand_name>
+    </keitaiso>
+  </pattern>
+</bunkei>
+
+
+<!--「から．．．に至るまで」　の記述例　（非連続複合文型）-->
+<bunkei name="kara_niitarumade">
+  <pattern>
+    <keitaiso>
+      <cand_name>kara_kakujyoshi</cand_name>
+    </keitaiso>
+    <keitaiso type="hirenzoku"></keitaiso>
+    <keitaiso>
+       <cand_name>ni_kakujyoshi</cand_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>itaru</candidate_name>
+    </keitaiso>
+    <keitaiso>
+      <cand_name>made</cand_name>
+    </keitaiso>
+  </pattern>
+</bunkei>
