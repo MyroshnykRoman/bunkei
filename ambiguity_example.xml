@@ -2,20 +2,20 @@
 <bunkei name="">
 	<pattern type="naiyou_hyogen/kinou_hyougen">
 	<front_second>
-		<candidate_name></candidate_name>
-<candidate_name></candidate_name>
+		<cand_name></cand_name>
+<cand_name></cand_name>
 	</front_second>
 	<front_first>
-		<candidate_name></candidate_name>
-<candidate_name></candidate_name>
+		<cand_name></cand_name>
+<cand_name></cand_name>
 	</front_first>
 	<back_first>
-		<candidate_name></candidate_name>
-<candidate_name></candidate_name>
+		<cand_name></cand_name>
+<cand_name></cand_name>
 	</back_first>
 	<back_second>
-		<candidate_name></candidate_name>
-<candidate_name></candidate_name>
+		<cand_name></cand_name>
+<cand_name></cand_name>
 	</back_second>
 	</pattern>
 </bunkei>
@@ -32,7 +32,7 @@ typeの属性はパターンを内容表現同定もしくは機能表現同定�
 <bunkei name="towaie">
 	<pattern type="naiyou_hyogen">
 	<back_first>
-<candidate_name>nai_jyodoushi</candidate_name>
+<cand_name>nai_jyodoushi</cand_name>
 	</back_first>
 	</pattern>
 </bunkei>
@@ -42,7 +42,7 @@ typeの属性はパターンを内容表現同定もしくは機能表現同定�
 <bunkei name="ni_tarinai">
 	<pattern type="kinou_hyougen">
 	<front_first>
-		<candidate_name>doushi</candidate_name>
+		<cand_name>doushi</cand_name>
 	</front_first>
 	</pattern>
 </bunkei>
